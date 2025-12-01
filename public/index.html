@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tasks Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-wrapper">
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <h1 class="title">My Tasks</h1>
+                </div>
+                <button id="themeToggle" class="theme-toggle">☀️ Light mode</button>
+            </div>
+
+            <div class="controls">
+                <button id="loadTasksBtn">Refresh Tasks</button>
+            </div>
+
+            <form id="addTaskForm" class="add-form">
+                <input
+                    type="text"
+                    id="taskTitleInput"
+                    placeholder="New task title..."
+                    required
+                />
+                <button type="submit">Add Task</button>
+            </form>
+
+            <div id="tasksContainer" class="tasks-container">
+                <!-- Tasks will load here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
